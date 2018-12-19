@@ -5,10 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Weather Widget</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="config.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="script.js"></script>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="row">
+            <form id="weather-form" class="col-12 mt-5">
+                <label>Please enter a zip code to search for:</label>
+                <div class="input-group">
+                    <input type="number" class="form-control zip-code" length="5" placeholder="30324"/>
+                    <button type="submit" class="btn btn-success">Get Weather</button>
+                </div>
+            </form>
+            <div class="col-12 mt-5 weather-data"></div>
+        </div>
+    </div>
 </body>
 </html>
